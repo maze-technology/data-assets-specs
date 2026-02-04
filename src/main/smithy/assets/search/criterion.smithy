@@ -7,9 +7,9 @@ use tech.maze.dtos.assets.enums#PrimaryClass
 
 union CriterionFilter {
     byId: Document
-    bySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass: FilterBySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass
-    byDataProviderIdAndDataProviderMetaDatasAssetId: FilterByDataProviderIdAndDataProviderMetaDatasAssetId
-    byDataProviderIdAndDataProviderSymbol: FilterByDataProviderIdAndDataProviderSymbol
+    bySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass: CriterionFilterBySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass
+    byDataProviderIdAndDataProviderMetaDatasAssetId: CriterionFilterByDataProviderIdAndDataProviderMetaDatasAssetId
+    byDataProviderIdAndDataProviderSymbol: CriterionFilterByDataProviderIdAndDataProviderSymbol
 }
 
 structure Criterion {

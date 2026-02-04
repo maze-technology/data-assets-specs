@@ -4,8 +4,8 @@ namespace tech.maze.dtos.assets.requests
 
 use smithy.api#Document
 use tech.maze.dtos.assets.models#Asset
-use tech.maze.dtos.assets.search#Infos
 use tech.maze.dtos.assets.search#Pagination
+use tech.maze.dtos.assets.search#PaginationInfos
 
 list FindByDataProvidersRequestDataProvidersList {
     member: Document
@@ -24,5 +24,5 @@ structure FindByDataProvidersRequest {
 
 structure FindByDataProvidersResponse {
     assets: FindByDataProvidersResponseAssetsList
-    paginationInfos: Infos
+    paginationInfos: PaginationInfos
 }
