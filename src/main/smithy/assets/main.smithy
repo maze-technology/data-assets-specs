@@ -2,14 +2,14 @@ $version: "2"
 
 namespace tech.maze.dtos.assets.main.proto
 
+use tech.maze.dtos.assets.payloads#SyncAssetsRequest
+use tech.maze.dtos.assets.payloads#SyncAssetsResponse
 use tech.maze.dtos.assets.requests#BlacklistRequest
 use tech.maze.dtos.assets.requests#BlacklistResponse
 use tech.maze.dtos.assets.requests#FindByDataProvidersRequest
 use tech.maze.dtos.assets.requests#FindByDataProvidersResponse
 use tech.maze.dtos.assets.requests#FindOneRequest
 use tech.maze.dtos.assets.requests#FindOneResponse
-use tech.maze.dtos.assets.payloads#SyncAssetsRequest
-use tech.maze.dtos.assets.payloads#SyncAssetsResponse
 use tech.maze.dtos.assets.requests#WhitelistRequest
 use tech.maze.dtos.assets.requests#WhitelistResponse
 
