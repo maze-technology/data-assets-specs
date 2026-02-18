@@ -16,9 +16,9 @@ use tech.maze.dtos.assets.requests#WhitelistResponse
 service AssetsGRPC {
     version: "1.0"
     operations: [
-        FindOne,
-        Blacklist,
-        Whitelist,
+        FindOne
+        Blacklist
+        Whitelist
         FindByDataProviders
     ]
 }
