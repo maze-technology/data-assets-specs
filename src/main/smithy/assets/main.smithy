@@ -2,8 +2,6 @@ $version: "2"
 
 namespace tech.maze.dtos.assets.main.proto
 
-use tech.maze.dtos.assets.payloads#SyncAssetsRequest
-use tech.maze.dtos.assets.payloads#SyncAssetsResponse
 use tech.maze.dtos.assets.requests#BlacklistRequest
 use tech.maze.dtos.assets.requests#BlacklistResponse
 use tech.maze.dtos.assets.requests#FindByDataProvidersRequest
@@ -20,13 +18,6 @@ service AssetsGRPC {
         Blacklist
         Whitelist
         FindByDataProviders
-    ]
-}
-
-service AssetsQueue {
-    version: "1.0"
-    operations: [
-        SyncAssets
     ]
 }
 
@@ -50,9 +41,4 @@ operation Whitelist {
 operation FindByDataProviders {
     input: FindByDataProvidersRequest
     output: FindByDataProvidersResponse
-}
-
-operation SyncAssets {
-    input: SyncAssetsRequest
-    output: SyncAssetsResponse
 }
