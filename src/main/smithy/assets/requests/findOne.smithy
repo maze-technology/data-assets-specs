@@ -5,8 +5,6 @@ namespace tech.maze.dtos.assets.requests
 use tech.maze.dtos.assets.models#Asset
 use tech.maze.dtos.assets.search#Criterion
 
-structure FindOne {}
-
 structure FindOneRequest {
     criterion: Criterion
 }

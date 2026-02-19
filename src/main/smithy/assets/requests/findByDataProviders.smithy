@@ -15,8 +15,6 @@ list FindByDataProvidersResponseAssetsList {
     member: Asset
 }
 
-structure FindByDataProviders {}
-
 structure FindByDataProvidersRequest {
     dataProviders: FindByDataProvidersRequestDataProvidersList
     pagination: Pagination
