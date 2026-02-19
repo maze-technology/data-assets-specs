@@ -1,6 +1,6 @@
 $version: "2"
 
-namespace tech.maze.dtos.assets.controllers.main.proto
+namespace tech.maze.dtos.assets.controllers
 
 use alloy.proto#protoEnabled
 use tech.maze.dtos.assets.requests#BlacklistRequest
