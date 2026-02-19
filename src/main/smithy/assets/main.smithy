@@ -3,7 +3,6 @@ $version: "2"
 namespace tech.maze.dtos.assets.main.proto
 
 use alloy.proto#protoEnabled
-
 use tech.maze.dtos.assets.requests#BlacklistRequest
 use tech.maze.dtos.assets.requests#BlacklistResponse
 use tech.maze.dtos.assets.requests#FindByDataProvidersRequest
