@@ -9,12 +9,10 @@ use tech.maze.dtos.assets.models#Asset
 use tech.maze.dtos.assets.search#Pagination
 use tech.maze.dtos.assets.search#PaginationInfos
 
-@protoEnabled
 list FindByDataProvidersRequestDataProvidersList {
     member: Document
 }
 
-@protoEnabled
 list FindByDataProvidersResponseAssetsList {
     member: Asset
 }

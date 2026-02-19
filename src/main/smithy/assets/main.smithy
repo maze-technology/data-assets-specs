@@ -25,26 +25,22 @@ service AssetsGRPC {
 }
 
 @readonly
-@protoEnabled
 operation FindOne {
     input: FindOneRequest
     output: FindOneResponse
 }
 
-@protoEnabled
 operation Blacklist {
     input: BlacklistRequest
     output: BlacklistResponse
 }
 
-@protoEnabled
 operation Whitelist {
     input: WhitelistRequest
     output: WhitelistResponse
 }
 
 @readonly
-@protoEnabled
 operation FindByDataProviders {
     input: FindByDataProvidersRequest
     output: FindByDataProvidersResponse

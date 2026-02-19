@@ -7,7 +7,6 @@ use alloy.proto#protoEnabled
 use smithy.api#Document
 use tech.maze.dtos.assets.enums#PrimaryClass
 
-@protoEnabled
 union CriterionFilter {
     byId: Document
     bySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass: CriterionFilterBySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass
