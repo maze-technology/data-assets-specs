@@ -8,7 +8,7 @@ use smithy.api#Timestamp
 use tech.maze.dtos.assets.enums#PrimaryClass
 
 list AssetDataProvidersMetaDatasList {
-    member: DataProviderMetaDatas
+    member: AssetMetaDatas
 }
 
 @protoEnabled

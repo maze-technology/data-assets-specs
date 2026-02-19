@@ -3,7 +3,7 @@ $version: "2"
 namespace tech.maze.dtos.assets.payloads
 
 use smithy.api#Document
-use tech.maze.dtos.assets.models#Asset
+use tech.maze.dtos.assets.models#AssetMetaDatas
 use tech.maze.events#event
 
 @event(type: "tech.maze.assets.fetch.request", topic: "assets.fetch.request", version: "1.0.0")
@@ -18,7 +18,7 @@ structure FetchAssetsResponse {
     dataProvider: Document
 
     @required
-    asset: Asset
+    assetMetaDatas: AssetMetaDatas
 
     @required
     isLast: Boolean
