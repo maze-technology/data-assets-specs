@@ -6,27 +6,27 @@ use alloy.proto#protoEnabled
 use smithy.api#Document
 use tech.maze.dtos.assets.enums#PrimaryClass
 
-map DataProviderMetaDatasExtraDatasMap {
+map AssetMetaDatasExtraDatasMap {
     key: String
     value: String
 }
 
-map DataProviderMetaDatasToolBoxMap {
+map AssetMetaDatasToolBoxMap {
     key: String
     value: String
 }
 
 @protoEnabled
-structure DataProviderMetaDatas {
+structure AssetMetaDatas {
     dataProviderId: Document
     asset: Asset
     primaryClass: PrimaryClass
-    extraDatas: DataProviderMetaDatasExtraDatasMap
-    toolBox: DataProviderMetaDatasToolBoxMap
+    extraDatas: AssetMetaDatasExtraDatasMap
+    toolBox: AssetMetaDatasToolBoxMap
 }
 
 @protoEnabled
-structure DataProviderMetaDatasAsset {
+structure AssetMetaDatasAsset {
     id: String
     symbol: String
     name: String
