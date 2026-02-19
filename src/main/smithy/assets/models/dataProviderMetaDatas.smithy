@@ -2,6 +2,8 @@ $version: "2"
 
 namespace tech.maze.dtos.assets.models
 
+use alloy.proto#protoEnabled
+
 use smithy.api#Document
 use tech.maze.dtos.assets.enums#PrimaryClass
 
@@ -15,6 +17,7 @@ map DataProviderMetaDatasToolBoxMap {
     value: String
 }
 
+@protoEnabled
 structure DataProviderMetaDatas {
     dataProviderId: Document
     asset: Asset
@@ -23,6 +26,7 @@ structure DataProviderMetaDatas {
     toolBox: DataProviderMetaDatasToolBoxMap
 }
 
+@protoEnabled
 structure DataProviderMetaDatasAsset {
     id: String
     symbol: String
