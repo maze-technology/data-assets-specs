@@ -5,8 +5,8 @@ namespace tech.maze.dtos.assets.requests
 use alloy.proto#protoEnabled
 use smithy.api#Document
 use tech.maze.dtos.assets.models#Asset
-use tech.maze.dtos.assets.search#Pagination
-use tech.maze.dtos.assets.search#PaginationInfos
+use tech.maze.dtos.commons.search#Pagination
+use tech.maze.dtos.commons.search#PaginationInfos
 
 list FindByDataProvidersRequestDataProvidersList {
     member: Document
