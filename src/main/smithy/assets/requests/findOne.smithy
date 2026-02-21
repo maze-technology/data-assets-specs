@@ -8,10 +8,12 @@ use tech.maze.dtos.assets.search#Criterion
 
 @protoEnabled
 structure FindOneRequest {
+    @required
     criterion: Criterion
 }
 
 @protoEnabled
 structure FindOneResponse {
+    @required
     asset: Asset
 }

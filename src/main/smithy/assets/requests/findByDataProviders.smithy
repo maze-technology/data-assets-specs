@@ -18,12 +18,18 @@ list FindByDataProvidersResponseAssetsList {
 
 @protoEnabled
 structure FindByDataProvidersRequest {
+    @required
     dataProviders: FindByDataProvidersRequestDataProvidersList
+
+    @required
     pagination: Pagination
 }
 
 @protoEnabled
 structure FindByDataProvidersResponse {
+    @required
     assets: FindByDataProvidersResponseAssetsList
+
+    @required
     paginationInfos: PaginationInfos
 }

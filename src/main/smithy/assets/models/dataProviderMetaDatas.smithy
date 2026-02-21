@@ -18,16 +18,30 @@ map AssetMetaDatasToolBoxMap {
 
 @protoEnabled
 structure AssetMetaDatas {
+    @required
     dataProviderId: Document
-    asset: Asset
+
+    @required
+    asset: AssetMetaDatasAsset
+
+    @required
     primaryClass: PrimaryClass
+
+    @required
     extraDatas: AssetMetaDatasExtraDatasMap
+
+    @required
     toolBox: AssetMetaDatasToolBoxMap
 }
 
 @protoEnabled
 structure AssetMetaDatasAsset {
+    @required
     id: String
+
+    @required
     symbol: String
+
+    @required
     name: String
 }

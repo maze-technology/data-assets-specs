@@ -7,6 +7,7 @@ use tech.maze.dtos.assets.search#Criterion
 
 @protoEnabled
 structure BlacklistRequest {
+    @required
     criterion: Criterion
 }
 

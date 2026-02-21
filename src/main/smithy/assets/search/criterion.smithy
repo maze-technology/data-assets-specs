@@ -15,24 +15,36 @@ union CriterionFilter {
 
 @protoEnabled
 structure Criterion {
+    @required
     filter: CriterionFilter
 }
 
 @protoEnabled
 structure CriterionFilterBySymbolIgnoreCaseAndNameIgnoreCaseAndPrimaryClass {
+    @required
     symbol: String
+
+    @required
     name: String
+
+    @required
     primaryClass: PrimaryClass
 }
 
 @protoEnabled
 structure CriterionFilterByDataProviderIdAndDataProviderMetaDatasAssetId {
+    @required
     dataProviderId: Document
+
+    @required
     dataProviderMetaDatasAssetId: String
 }
 
 @protoEnabled
 structure CriterionFilterByDataProviderIdAndDataProviderSymbol {
+    @required
     dataProviderId: Document
+
+    @required
     symbol: String
 }
