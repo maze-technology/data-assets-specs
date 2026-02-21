@@ -9,5 +9,6 @@ structure SyncAssetsRequest {}
 
 @event(type: "tech.maze.assets.sync.response", version: "1.0.0")
 structure SyncAssetsResponse {
+    @required
     skipped: Long
 }
