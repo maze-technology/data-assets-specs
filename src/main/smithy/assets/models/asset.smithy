@@ -14,11 +14,17 @@ list AssetDataProvidersMetaDatasList {
 @protoEnabled
 structure Asset {
     id: Document
+
     symbol: String
+
     name: String
+
     @required
     primaryClass: PrimaryClass
+
     createdAt: Timestamp
+
     dataProvidersMetaDatas: AssetDataProvidersMetaDatasList
+
     blacklisted: Boolean
 }
